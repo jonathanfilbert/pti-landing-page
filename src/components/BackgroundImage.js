@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 // Note: You can change "images" to whatever you'd like.
 
@@ -41,11 +41,13 @@ const Image = props => (
         return null
       }
       return (
-        <Img
+        <BackgroundImage
           alt={props.alt}
           fluid={image.node.childImageSharp.fluid}
           style={{ position: "static", paddingBottom: 0 }}
-        />
+        >
+          {props.children}
+        </BackgroundImage>
       )
     }}
   />

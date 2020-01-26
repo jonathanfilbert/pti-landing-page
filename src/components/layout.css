@@ -210,7 +210,6 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 img {
-  max-width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -218,7 +217,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -578,7 +576,6 @@ th {
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
-  padding-bottom: calc(0.725rem - 1px);
 }
 th:first-child,
 td:first-child {
@@ -596,7 +593,6 @@ code {
     "Liberation Mono", Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
 }
 pre code {
   background: none;
