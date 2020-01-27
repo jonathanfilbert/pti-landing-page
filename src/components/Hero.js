@@ -40,15 +40,13 @@ const HeroStyle = styled.div`
   }
   .title {
     height: 100%;
-    color: white;
     font-family: "Helvetica";
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
+    justify-content: space-between;
   }
   .subTitle {
     color: white;
@@ -62,6 +60,8 @@ const HeroStyle = styled.div`
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .leftContainer {
     display: flex;
@@ -84,6 +84,14 @@ const HeroStyle = styled.div`
     -webkit-text-stroke: 1px #ea4668;
     -webkit-text-fill-color: transparent;
     text-align: center;
+  }
+  .topText {
+    color: #ffe92c;
+    text-align: left;
+  }
+  .bottomText {
+    color: white;
+    text-align: right;
   }
   @media screen and (max-width: 620px) {
     .pti {
@@ -113,18 +121,18 @@ const Hero = () => (
           </div>
           <div className="centerContainer">
             <div className="title">
-              <div className="pti">PTI</div>
-              <div className="pti">PTI</div>
-              <div
-                className="pti"
-                style={{
-                  WebkitTextFillColor: "#EA4668",
-                  WebkitTextStroke: "transparent",
-                }}
-              >
-                PTI
+              <div className="topText">
+                <div>To live in a world,</div>
+                <div>to solve problems,</div>
+                <div>
+                  to invent solutions&nbsp;
+                  <s> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</s>
+                </div>
               </div>
-              <div className="pti">PTI</div>
+              <div className="bottomText">
+                <div>PTI</div>
+                <div style={{ color: "#ffe92c" }}>#ImpactThroughTech</div>
+              </div>
             </div>
           </div>
           <div className="rightContainer">
